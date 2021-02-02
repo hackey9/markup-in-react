@@ -1,15 +1,21 @@
 import LayoutLine from "Components/Layout/LayoutLine"
-import React, {FC, PropsWithChildren} from "react"
+import GrowFlexContainer from "Components/Main/Elements/GrowFlexContainer"
+import React, {FC} from "react"
 
 
-export type MainProps = PropsWithChildren<{}>
-
-const Main: FC<MainProps> = ({children}) => {
+/**
+ * Container for main content
+ *
+ * Include top&bottom padding
+ */
+const Main: FC = ({children}) => {
 
   return (
-    <LayoutLine>
-      {children}
-    </LayoutLine>
+    <GrowFlexContainer>
+      <LayoutLine>
+        {children}
+      </LayoutLine>
+    </GrowFlexContainer>
   )
 }
 export default Main

@@ -1,0 +1,11 @@
+@import "Styles/screens";
+
+.container {
+  flex-grow: 1;
+
+  padding: 40px 0 120px 0;
+
+  @include screenM {
+    padding: 20px 0 60px 0;
+  }
+}

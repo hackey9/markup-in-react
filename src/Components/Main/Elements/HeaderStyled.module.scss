@@ -1,0 +1,16 @@
+@import "Styles/screens";
+
+.header {
+  font-family: Podkova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 40px;
+
+  color: #00243b;
+
+  margin-bottom: 40px;
+  @include screenM {
+    margin-bottom: 20px;
+  }
+}
