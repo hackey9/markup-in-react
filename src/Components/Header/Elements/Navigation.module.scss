@@ -1,0 +1,17 @@
+.container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-auto-columns: auto;
+  grid-column-gap: 40px;
+  grid-auto-flow: column;
+
+  > .item {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #00243b;
+  }
+}

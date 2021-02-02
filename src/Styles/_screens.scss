@@ -1,0 +1,60 @@
+$breakpointMobile: 600;
+$breakpointTablet: 1200;
+$breakpointDesktop: 1900;
+
+// 4
+
+@mixin screenM {
+  @media (max-width: #{$breakpointMobile - 1}px) {
+    @content;
+  }
+}
+
+@mixin screenT {
+  @media (min-width: #{$breakpointMobile}px) and (max-width: #{$breakpointTablet - 1}px) {
+    @content;
+  }
+}
+
+@mixin screenD {
+  @media (min-width: #{$breakpointTablet}px) and (max-width: #{$breakpointDesktop - 1}px) {
+    @content;
+  }
+}
+
+@mixin screenL {
+  @media (min-width: #{$breakpointDesktop}px) {
+    @content;
+  }
+}
+
+// 3
+
+@mixin screenMT {
+  @include screenM { @content; }
+  @include screenT { @content; }
+}
+
+@mixin screenTD {
+  @include screenT { @content; }
+  @include screenD { @content; }
+}
+
+@mixin screenDL {
+  @include screenD { @content; }
+  @include screenL { @content; }
+}
+
+// 2
+
+@mixin screenMTD {
+  @include screenM { @content; }
+  @include screenT { @content; }
+  @include screenD { @content; }
+}
+
+@mixin screenTDL {
+  @include screenT { @content; }
+  @include screenD { @content; }
+  @include screenL { @content; }
+}

@@ -1,0 +1,33 @@
+@import "../../../Styles/screens";
+
+
+.container {
+
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+
+  @include screenTDL {
+    &::after, &::before {
+      content: '';
+      display: block;
+      //width: 100px;
+      flex-basis: 100px;
+      flex-shrink: 1;
+    }
+  }
+
+  &::after, &::before {
+
+  }
+
+  > * {
+    flex: 1;
+  }
+}
