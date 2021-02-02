@@ -25,11 +25,3 @@ const HeaderContainer: FC<HeaderContainerProps> = ({logo, title, nav, search, bu
 export default HeaderContainer
 
 
-export const HeaderWrapper: FC = ({children}) => {
-
-  return (
-    <div className={css.wrapper}>
-      {children}
-    </div>
-  )
-}

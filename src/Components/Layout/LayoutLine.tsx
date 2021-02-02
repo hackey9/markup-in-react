@@ -1,10 +1,11 @@
 import Line from "Components/Layout/Elements/Line"
-import React, {FC, PropsWithChildren} from "react"
+import React, {FC} from "react"
 
 
-export type LayoutContainerProps = PropsWithChildren<{}>
-
-const LayoutLine: FC<LayoutContainerProps> = ({children}) => {
+/**
+ * Add adaptive aside spacers
+ */
+const LayoutLine: FC = ({children}) => {
 
   return (
     <Line>

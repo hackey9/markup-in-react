@@ -1,13 +1,7 @@
-@import "../../../Styles/screens";
+@import "Styles/screens";
 
 
 .container {
-
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -23,8 +17,9 @@
     }
   }
 
-  &::after, &::before {
+  // TODO: sizes for all resolutions
 
+  &::after, &::before {
   }
 
   > * {

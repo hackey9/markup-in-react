@@ -1,10 +1,13 @@
 import VerticalLayout from "Components/Layout/Elements/VerticalLayout"
-import React, {FC, PropsWithChildren} from "react"
+import React, {FC} from "react"
 
 
-export type LayoutProps = PropsWithChildren<{}>
-
-const Layout: FC<LayoutProps> = ({children}) => {
+/**
+ * Uses flexbox vertical layout.
+ *
+ * With flexbox it is available to grow any content block (like <Main/>)
+ */
+const Layout: FC = ({children}) => {
 
   return (
     <VerticalLayout>

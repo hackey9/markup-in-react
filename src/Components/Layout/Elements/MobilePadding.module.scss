@@ -1,0 +1,7 @@
+@import "Styles/screens";
+
+.container {
+  @include screenM {
+    padding: 0 20px;
+  }
+}
