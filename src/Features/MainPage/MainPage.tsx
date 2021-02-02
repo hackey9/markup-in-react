@@ -25,12 +25,13 @@ const MainPage: FC<MainPageProps> = ({}) => {
     {name: "Ночной океан", category: "Природа", imageUrl: String(img4)},
     {name: "Ночной океан", category: "Природа", imageUrl: String(img5)},
     {name: "Ночной океан", category: "Природа", imageUrl: String(img6)},
-    {name: "Ночной океан", category: "Природа", imageUrl: String(img7)},
+    {name: "Lorem ipsum dolor sit amet, 123.", category: "Природа", imageUrl: String(img7)},
     {name: "Ночной океан", category: "Природа", imageUrl: String(img8)},
   ]
 
   return (
     <>
+
       <BannerComponent/>
       <HeaderComponent>Популярные картины</HeaderComponent>
       <CanvasGridComponent>
@@ -44,7 +45,7 @@ const MainPage: FC<MainPageProps> = ({}) => {
         ))}
       </CanvasGridComponent>
       <HeaderComponent>Популярные категории</HeaderComponent>
-      
+
     </>
   )
 }

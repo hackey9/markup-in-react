@@ -1,3 +1,4 @@
+import CanvasItemButton from "Features/MainPage/CanvasGrid/Elements/CanvasItemButton"
 import React, {CSSProperties, FC, PropsWithChildren} from "react"
 import css from "./CanvasItem.module.scss"
 
@@ -18,7 +19,7 @@ const CanvasItem: FC<CanvasItemProps> = ({imageUrl, category, name}) => {
         <div className={css.image} style={{backgroundImage: `url("${imageUrl}")`} as CSSProperties}/>
         <div className={css.category}>{category}</div>
         <div className={css.name}>{name}</div>
-        {/* button */}
+        <CanvasItemButton>Выбрать</CanvasItemButton>
       </div>
       <div className={css.follow}/>
     </div>
