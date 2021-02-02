@@ -1,0 +1,82 @@
+.box {
+  background-color: #fff;
+  height: 460px;
+
+  > .flex {
+    padding: 40px 20px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    > .image {
+      width: 200px;
+      height: 250px;
+
+      margin-bottom: 20px;
+    }
+
+    > .category,
+    > .name {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: fade;
+      text-align: center;
+    }
+
+    > .category {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+
+      color: #95ABB2;
+    }
+
+    > .name {
+      font-family: Podkova;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 21px;
+      line-height: 30px;
+
+      color: #00243B;
+
+      margin-bottom: 20px;
+    }
+  }
+
+  > .follow {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border-radius: 20px;
+    background: #F3F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    &::after {
+      content: '';
+
+      display: block;
+      width: 20px;
+      height: 20px;
+
+      background-image: url("./Assets/Star.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      background-origin: content-box;
+
+    }
+  }
+}

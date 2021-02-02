@@ -8,7 +8,7 @@ import React, {FC} from "react"
  *
  * Includes margin-bottom.
  */
-const Header: FC = ({children}) => {
+const HeaderComponent: FC = ({children}) => {
 
   return (
     <LayoutWrapper>
@@ -19,4 +19,4 @@ const Header: FC = ({children}) => {
 
   )
 }
-export default Header
+export default HeaderComponent

@@ -1,4 +1,5 @@
 import LayoutLine from "Components/Layout/LayoutLine"
+import ChildrenContainer from "Components/Main/Elements/ChildrenContainer"
 import GrowFlexContainer from "Components/Main/Elements/GrowFlexContainer"
 import React, {FC} from "react"
 
@@ -13,7 +14,9 @@ const Main: FC = ({children}) => {
   return (
     <GrowFlexContainer>
       <LayoutLine>
-        {children}
+        <ChildrenContainer>
+          {children}
+        </ChildrenContainer>
       </LayoutLine>
     </GrowFlexContainer>
   )

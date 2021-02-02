@@ -1,0 +1,14 @@
+@import "Styles/screens";
+
+.container {
+  height: 350px;
+  margin-bottom: 120px;
+
+  background-color: #fff;
+
+
+  @include screenM {
+    height: 360px;
+    margin-bottom: 60px;
+  }
+}
