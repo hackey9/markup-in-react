@@ -1,6 +1,8 @@
 import clsx from "clsx"
 import React, {FC, PropsWithChildren} from "react"
+import fonts from "Styles/Fonts"
 import css from "./Buttons.module.scss"
+
 
 
 export type ButtonsProps = PropsWithChildren<{}>
@@ -11,11 +13,11 @@ const Buttons: FC<ButtonsProps> = ({}) => {
     <div className={css.container}>
 
       <div className={clsx(css.item, css.iconStar)}>
-        <div className={css.itemCount}>10</div>
+        <div className={clsx(css.itemCount, fonts.main)}>10</div>
       </div>
 
       <div className={clsx(css.item, css.iconCart)}>
-        <div className={css.itemCount}>5</div>
+        <div className={clsx(css.itemCount, fonts.main)}>5</div>
       </div>
 
       <div className={clsx(css.item, css.iconUser)}/>

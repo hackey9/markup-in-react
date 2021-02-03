@@ -1,4 +1,6 @@
+import clsx from "clsx"
 import React, {FC, PropsWithChildren} from "react"
+import fonts from "Styles/Fonts"
 import css from "./Search.module.scss"
 
 
@@ -8,7 +10,7 @@ const Search: FC<SearchProps> = () => {
 
   return (
     <div className={css.container}>
-      <input className={css.input} type={"text"}/>
+      <input className={clsx(css.input, fonts.main)} type={"text"}/>
       <div className={css.glass}/>
     </div>
   )

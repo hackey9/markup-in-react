@@ -1,18 +1,15 @@
 import clsx from "clsx"
 import React, {FC} from "react"
 import fonts from "Styles/Fonts"
-import css from "./KindLabel.module.scss"
+import css from "./OpenLabel.module.scss"
 
 
-
-const KindLabel: FC = () => {
+const OpenLabel: FC = ({children}) => {
 
   return (
     <div className={clsx(css.label, fonts.main)}>
-      Добрый
-      <br/>
-      арт-проект
+      {children}
     </div>
   )
 }
-export default KindLabel
+export default OpenLabel

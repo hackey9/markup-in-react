@@ -2,6 +2,8 @@ import HeaderComponent from "Components/Main/HeaderComponent"
 import BannerComponent from "Features/MainPage/Banner/BannerComponent"
 import CanvasGridComponent from "Features/MainPage/CanvasGrid/CanvasGridComponent"
 import CanvasItemComponent from "Features/MainPage/CanvasGrid/CanvasItemComponent"
+import CategoriesGridComponent from "Features/MainPage/Categories/CategoriesGridComponent"
+import CategoryItemComponent from "Features/MainPage/Categories/CategoryItemComponent"
 import React, {FC, PropsWithChildren} from "react"
 
 import img1 from "./CanvasGrid/Elements/Assets/Canvas (1).png"
@@ -45,6 +47,15 @@ const MainPage: FC<MainPageProps> = ({}) => {
         ))}
       </CanvasGridComponent>
       <HeaderComponent>Популярные категории</HeaderComponent>
+      <CategoriesGridComponent>
+        {mockItems.map(({name, imageUrl}) => (
+          <CategoryItemComponent
+            name={name}
+            imageUrl={imageUrl}
+          />
+        ))}
+      </CategoriesGridComponent>
+      <BannerComponent/>
 
     </>
   )

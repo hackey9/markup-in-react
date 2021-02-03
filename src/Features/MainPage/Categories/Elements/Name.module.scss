@@ -1,0 +1,7 @@
+@import "Styles/text";
+
+.label {
+  @include textOneLineOverflow;
+
+  text-align: center;
+}

@@ -1,3 +1,5 @@
+@import "Styles/text";
+
 .box {
   background-color: #fff;
   //height: 460px;
@@ -21,19 +23,12 @@
     > .category,
     > .name {
       width: 100%;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
       text-align: center;
+
+      @include textOneLineOverflow;
     }
 
     > .category {
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 20px;
-
       color: #95ABB2;
     }
 

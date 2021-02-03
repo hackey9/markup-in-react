@@ -1,6 +1,7 @@
+import clsx from "clsx"
 import React, {FC, PropsWithChildren} from "react"
+import fonts from "Styles/Fonts"
 import css from "./CanvasItemButton.module.scss"
-
 
 
 export type CanvasItemButtonProps = PropsWithChildren<{
@@ -10,7 +11,7 @@ export type CanvasItemButtonProps = PropsWithChildren<{
 const CanvasItemButton: FC<CanvasItemButtonProps> = ({children, onClick}) => {
 
   return (
-    <div className={css.button} onClick={onClick}>
+    <div className={clsx(fonts.main, css.button)} onClick={onClick}>
       {children}
     </div>
   )
