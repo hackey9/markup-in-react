@@ -1,3 +1,9 @@
+# Design materials
+
+Design was found on the internet.
+
+Explore [app design on Figma](https://www.figma.com/file/n2okSJFjFTzCm5yg0qzfj1/The-Soul)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
