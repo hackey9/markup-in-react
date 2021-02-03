@@ -1,0 +1,17 @@
+@import "Styles/screens";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  column-gap: 40px;
+
+  grid-area: nav;
+
+  @include screenMT {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}

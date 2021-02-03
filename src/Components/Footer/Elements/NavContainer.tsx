@@ -1,0 +1,13 @@
+import React, {FC} from "react"
+import css from "./NavContainer.module.scss"
+
+
+const NavContainer: FC = ({children}) => {
+
+  return (
+    <div className={css.container}>
+      {children}
+    </div>
+  )
+}
+export default NavContainer

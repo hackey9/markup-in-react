@@ -1,3 +1,4 @@
+import FooterComponent from "Components/Footer/FooterComponent"
 import Header from "Components/Header/Header"
 import Layout from "Components/Layout/Layout"
 import Main from "Components/Main/Main"
@@ -13,6 +14,7 @@ const Demo: FC = () => {
       <Main>
         <MainPage/>
       </Main>
+      <FooterComponent/>
     </Layout>
   )
 }

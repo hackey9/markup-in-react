@@ -1,0 +1,19 @@
+@import "Styles/screens";
+
+
+.logo {
+  background-image: url("/Assets/SoulLogo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-origin: content-box;
+
+  width: 66px;
+  height: 60px;
+
+  grid-area: logo;
+
+  @include screenM {
+    width: 55px;
+  }
+}

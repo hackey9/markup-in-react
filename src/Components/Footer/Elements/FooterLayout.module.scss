@@ -1,0 +1,55 @@
+@import "Styles/screens";
+
+.container {
+  background-color: white;
+
+  padding: 20px 0;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  row-gap: 40px;
+
+  @include screenM {
+    padding: 10px 0 20px 0;
+  }
+
+  > .top {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template: "       logo .    name .    nav  .                 social";
+    grid-template-columns: auto 40px auto 80px auto minmax(40px, 1fr) auto;
+
+    align-items: center;
+
+    @include screenMT {
+      grid-template:
+        " logo  .  name  "
+        " nav  nav social ";
+      grid-template-columns: 55px 40px 1fr;
+      grid-template-rows: auto auto;
+
+      grid-row-gap: 30px;
+    }
+
+  }
+
+  > .bot {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    @include screenMT {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      row-gap: 20px;
+    }
+
+  }
+}
